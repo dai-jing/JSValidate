@@ -1,0 +1,52 @@
+/* Format the <Header> (as a blue border box). */
+.Header {
+	background-color: #7695FE;
+	border: thin #336699 solid;
+	padding: 10px;
+	margin: 10px;
+	text-align: center;
+}
+
+.Header h1 {
+	margin: 0px;
+	color: white;
+	font-size: xx-large;
+}
+
+.Header .info {
+  	margin: 0px;
+  	font-weight: bold;
+}
+
+.Header .author {
+  	font-style: italic;
+  	font-size: small;
+  	margin: 0px;
+}
+
+/* Format the <form> */
+.form1 {
+	border: dashed 1px black;
+	margin: 10px;
+  	font-size: medium;
+  	padding-top: 20px;
+  	padding-bottom: 5px;
+  	padding-left: 400px;
+  	padding-right: 400px;
+	float: center;
+  	line-height: 120%;
+}
+
+/* Format the required field text */
+.required {
+	font-family: Cambria;
+}
+
+em {
+	font-style: normal;
+	color: #f00;
+}
+
+input:focus {
+	background: #eaeaea;
+}

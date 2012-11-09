@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Registration Page</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"></meta>
+		<link rel="stylesheet" href="style.css" />
+		<script type="text/javascript" src="validate.js"></script>
+	</head>
+	<body>
+		<div class="Header">
+			<h1>Registration Page</h1>
+			<p class="info">Fill all the information to register</p>
+			<p class="author">Written by Jing Dai</p>
+		</div>
+		<form class="form1" action="" onsubmit="return register();">
+			<table width="800px">
+				<tr>
+					<td align="right" class="required">User Name<em>*</em> &nbsp;&nbsp;</td>
+					<td><input type="text" id="username" onblur="isUserNameValid(document.getElementById('username').value);" /></td>
+					<td width="500px"><label id="errorfieldforname" style="color: #f00"></label></td>
+				</tr>
+				
+				<tr>
+					<td align="right" class="required">Email<em>*</em> &nbsp;&nbsp;</td>
+					<td><input type="text" id="email" onblur="isEmailValid(document.getElementById('email').value);" /></td>
+					<td width="500px"><label id="errorfieldforemail" style="color: #f00"></label></td>
+				</tr>
+				
+				<tr>
+					<td align="right" class="required">Year of Birth<em>*</em> &nbsp;&nbsp;</td>
+					<td><input type="text" id="birthyear" onblur="isBirthYearValid(document.getElementById('birthyear').value);" /></td>
+					<td width="500px"><label id="errorfieldforyear" style="color: #f00"></label></td>
+				</tr>
+				
+				<tr>
+					<td align="right" class="required">Password<em>*</em> &nbsp;&nbsp;</td>
+					<td><input type="password" id="password" onblur="isPasswordValid(document.getElementById('password').value);" /></td>
+					<td width="500px"><label id="errorfieldforpassword" style="color: #f00"></label></td>
+				</tr>
+				
+				<tr>
+					<td align="right" class="required">Retype Password<em>*</em> &nbsp;&nbsp;</td>
+					<td><input type="password" id="repassword" onblur="isRetypePasswordValid(document.getElementById('repassword').value);" /></td>
+					<td width="500px"><label id="errorfieldforretypepassword" style="color: #f00"></label></td>
+				</tr>
+				
+				<tr>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td align="right"></td>
+					<td align="left"><input type="submit" value="Register" /></td>
+				</tr>
+				
+			</table>
+		</form>
+	</body>
+</html>
